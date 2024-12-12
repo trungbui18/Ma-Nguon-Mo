@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <br>
+        <nav>
+            <button id="cart">
+                <img id="cartMobi" src="img/cart.png" alt="">
+                <span class="cart-badge" id="cart-badge">0</span>
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items"></div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4 aoPoLo">
+        <h2 class="text-center"><strong>Áo thun</strong></h2>
+        <div class="row">
+            <div class="col-md-3 col-6 mb-4 hover-shadow">
+                <div class="card">
+                    <img src="img/aoThun/1.jpeg" class="card-img-top" alt="Áo Polo 1">
+                    <div class="card-body">
+                        <p class="data-name">Áo Thun Spandex Đỏ</p>
+                        <p class="card-text price">300.000đ</p>
+                        <button class="btn btn-success btn-default btn-add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4 hover-shadow">
+                <div class="card">
+                    <img src="img/aoThun/2.jpeg" class="card-img-top" alt="Áo Polo 2">
+                    <div class="card-body">
+                        <p class="data-name">Áo Thun Spandex Hồng</p>
+                        <p class="card-text price">300.000đ</p>
+                        <button class="btn btn-success btn-add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-md-3 col-6 mb-4 hover-shadow">
+                <div class="card">
+                    <img src="img/aoThun/3.jpeg" class="card-img-top" alt="Áo Polo 1">
+                    <div class="card-body">
+                        <p class="data-name">Áo Thun Spandex Đỏ</p>
+                        <p class="card-text price">300.000đ</p>
+                        <button class="btn btn-success btn-default btn-add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mb-4 hover-shadow">
+                <div class="card">
+                    <img src="img/aoThun/4.jpeg" class="card-img-top" alt="Áo Polo 1">
+                    <div class="card-body">
+                        <p class="data-name">Áo Thun Spandex Đỏ</p>
+                        <p class="card-text price">300.000đ</p>
+                        <button class="btn btn-success btn-default btn-add-to-cart">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+
+    <div class="notification" id="notification">Đã thêm vào giỏ hàng!</div>
+    <script src="cript.js"></script>
+</body>
+</html>
